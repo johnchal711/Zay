@@ -1,0 +1,163 @@
+*::, body {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: auto;
+    max-width: 1440px;
+    font-family: 'Raleway', sans-serif;
+}
+
+:root {
+    --main-color: #0065FC;
+    --main-bg-color: #F2F2F2;
+    --filter-bg-color: #DEEBFF;
+}
+
+.fa-solid, .fa-regular {
+    color: var(--main-color);
+}
+
+.main-container {
+    width: 100%;
+    padding: 0 50px;
+}
+
+.plinks {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+    text-decoration: none;
+    margin: 0;
+}
+
+.page-links {
+    position: relative;
+    color: #333;
+    text-decoration: none;
+    padding-top: 6px;
+}
+
+.page-links:hover {
+    color: rgb(4, 100, 246);
+}
+
+.page-links:hover::before {
+    content: "";
+    width: 100%;
+    height: 2px;
+    background: rgb(4, 100, 246);
+    position: absolute;
+    top: 0;
+}
+
+.booki-Logo {
+    display: flex;
+    height: 40px;
+    align-items: left;
+}
+
+.booki-Logo img {
+    padding-bottom: 3px;
+    width: 69px;
+    height: 23px;
+}
+
+.search {
+    display: flex;
+    flex-direction: row;
+    gap: 0;
+    text-align: center;
+}
+
+#location-icon {
+    color: black;
+}
+
+.location {
+    padding: 8px 12px;
+    border-radius: 10px 0 0 10px;
+    background-color: #F2F2F2;
+}
+
+.location-text {
+    border: 0;
+    border-top: 1px solid rgb(231, 230, 230);
+    border-bottom: 1px solid rgb(231, 230, 230);
+    margin-left: 3px;
+}
+
+.location-text > .value {
+    margin-inline-start: 0.5%;
+}
+
+.submit {
+    background-color: #0065fc;
+    color: white;
+    border-radius: 0 10px 10px 0;
+    padding: 8px 12px;
+    border: 0;
+    font-weight: 700;
+}
+
+.more-info {
+    display: flex;
+}
+
+.circle, .icon {
+    display: flex;
+    gap: 10px;
+}
+
+.icon > .fa-solid {
+    display: flex;
+    border: 1px solid rgb(217, 217, 217);
+    justify-content: center;
+    align-items: center;
+    width: 27px;
+    height: 27px;
+    border-radius: 50%;
+    margin-bottom: 15px;
+}
+
+.text-content {
+    text-align: center;
+}
+
+.filter-container {
+    display: flex;
+}
+
+.filter {
+    border: 2px solid #D9D9D9;
+    border-radius: 20px;
+    padding: 8px 14px;
+    font-weight: bold;
+    background-color: #fff;
+}
+
+.filter-container button:hover {
+    transition: all 0.3s;
+    background-color: rgb(222, 235, 253);
+}
+
+.hotels-rooms {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    order: 6;
+    justify-content: space-between;
+    row-gap: 14px;
+}
+
+.hotel-room {
+    width: 250px;
+    margin: 0 10px 20px 0;
+    border-radius: 1px;
+    gap: 8px;
+}
+
+.hotel-room img {
+    width: 250px;
+    height: 124px;
+    border-radius: 15px;
+}
