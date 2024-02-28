@@ -1,7 +1,9 @@
-Here's the modified code respecting the sizing:
 
-```css
-*::body {
+* {
+    box-sizing: border-box;
+}
+
+body {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -26,7 +28,6 @@ Here's the modified code respecting the sizing:
 .main-container {
     width: 100%;
     padding: 0 50px;
-    box-sizing: border-box;
 }
 
 /* Navigation links styling */
@@ -35,7 +36,7 @@ Here's the modified code respecting the sizing:
     justify-content: flex-end;
     gap: 10px;
     text-decoration: none;
-    margin: 0%;
+    margin: 0;
 }
 
 .page-links {
@@ -109,11 +110,10 @@ Here's the modified code respecting the sizing:
 .submit {
     background-color: #0065fc;
     color: white;
-    border-radius: 0 10px 10px 0px;
+    border-radius: 0 10px 10px 0;
     padding: 8px 12px;
     border: 0;
     border-color: #0065fc;
-    border: 0;
     font-weight: 700;
 }
 
@@ -310,10 +310,10 @@ li {
     margin: 0;
     font-size: 22px;
     margin-top: 25px;
-    margin
+    margin-bottom: 25px;
+    margin-inline
 
--bottom: 25px;
-    margin-inline-start: 2%;
+-start: 2%;
 }
 
 .card {
@@ -463,4 +463,3 @@ li {
 .popular-cards .card-rating {
     margin-bottom: 5px;
 }
-```
